@@ -25,7 +25,7 @@ function App() {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.post('http://localhost:3000/api/analyze', {
+      const response = await axios.post('https://re-deal-analyzer.onrender.com/api/analyze', {
         ...form,
         purchasePrice: parseFloat(form.purchasePrice),
         downPaymentPercent: parseFloat(form.downPaymentPercent),
